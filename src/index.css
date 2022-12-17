@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom scrollbar width */
+/* @layer utilities {
+  .scrollbar-light::-webkit-scrollbar {
+    width: 12px;
+  }
+} */

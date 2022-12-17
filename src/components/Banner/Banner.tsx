@@ -4,8 +4,8 @@ function Banner(props: Props) {
   return (
     <div className="w-full h-40 max-w-tablet overflow-hidden relative rounded-lg">
       <div className="w-full h-full bg-black/40 absolute"></div>
-      <div className="absolute left-4 right-4 flex flex-col items-start justify-evenly h-full">
-        <h3 className="text-light-neutral text-base font-normal leading-relaxed">
+      <div className="absolute left-4 right-4 flex flex-col items-start tablet:items-center justify-evenly h-full">
+        <h3 className="text-light-neutral text-base font-normal leading-relaxed text-start tablet:text-center">
           Tingkatkan penjualan
           <br />
           dengan optimasi <span className="font-semibold">Sosial Media</span>

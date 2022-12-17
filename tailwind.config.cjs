@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
 module.exports = {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -39,5 +40,32 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    // require("tailwind-scrollbar"),
+    plugin(({ addBase, theme }) => {
+      addBase({
+        ".scrollbar": {
+          overflowY: "auto",
+          scrollbarColor: `${theme("colors.slate.600")} ${theme(
+            "colors.slate.200"
+          )}`,
+          scrollbarWidth: "thin",
+        },
+        ".scrollbar::-webkit-scrollbar": {
+          height: "2px",
+          width: "2px",
+        },
+        ".scrollbar::-webkit-scrollbar-thumb": {
+          backgroundColor: theme("colors.slate.600"),
+        },
+        ".scrollbar::-webkit-scrollbar-track-piece": {
+          backgroundColor: theme("colors.slate.200"),
+        },
+      });
+    }),
+  ],
+  variants: {
+    scrollbar: ["rounded"],
+  },
 };

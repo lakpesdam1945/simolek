@@ -6,25 +6,21 @@ const ProductCard = (props: Props) => {
   return (
     <>
       <div className="grid grid-cols-2 tablet:grid-cols-4 gap-4">
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
-        <ProdukList />
+        <ProductCard.ProductList />
+        <ProductCard.ProductList />
+        <ProductCard.ProductList />
+        <ProductCard.ProductList />
+        <ProductCard.ProductList />
+        <ProductCard.ProductList />
+        <ProductCard.ProductList />
+        <ProductCard.ProductList />
       </div>
     </>
   );
 };
 
 // Card
-const ProdukList = () => {
+const ProductList = () => {
   return (
     <>
       <div className="h-[200px] w-full bg-dark-neutral dark:bg-dark-secondary overflow-hidden relative rounded-lg p-2">
@@ -49,6 +45,6 @@ const ProdukList = () => {
   );
 };
 
-ProductCard.ProductList = ProdukList;
+ProductCard.ProductList = ProductList;
 
 export default ProductCard;
