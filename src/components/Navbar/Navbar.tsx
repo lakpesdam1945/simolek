@@ -32,7 +32,6 @@ const Navbar = () => {
                 className="flex items-center justify-between gap-1"
               >
                 <IoBagAdd className="w-6 h-6" />
-                <span className="font-semibold">0</span>
               </Link>
             </div>
             <IoSunny

@@ -4,7 +4,7 @@ const CategoriesList = (props: Props) => {
   return (
     <>
       <div className="pt-5">
-        <div className="overflow-x-scroll overflow-auto flex w-full h-[90px]  tablet:h-[90px] gap-4 snap-proximity snap-x scrollbar">
+        <div className="overflow-x-scroll overflow-auto flex w-full h-[90px]  tablet:h-[90px] gap-4 snap-mandatory snap-x scrollbar">
           <CategoriesList.CategoriesListCard />
           <CategoriesList.CategoriesListCard />
           <CategoriesList.CategoriesListCard />
@@ -24,7 +24,7 @@ const CategoriesList = (props: Props) => {
 const CategoriesListCard = () => {
   return (
     <>
-      <div className="w-40 h-20 tablet:h-20 flex-shrink-0 bg-slate-400 rounded-md overflow-hidden relative snap-center">
+      <div className="w-40 flex-shrink-0 bg-slate-400 rounded-md overflow-hidden relative snap-center">
         <div className="w-full h-full absolute bg-gray-800/30 flex items-center justify-center">
           <span className="text-light-neutral text-sm font-semibold">
             Category

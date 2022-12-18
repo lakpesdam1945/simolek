@@ -65,7 +65,4 @@ module.exports = {
       });
     }),
   ],
-  variants: {
-    scrollbar: ["rounded"],
-  },
 };
